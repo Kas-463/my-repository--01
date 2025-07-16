@@ -1,0 +1,17 @@
+{
+    "python.defaultInterpreterPath": "D:\\motion_recognition\\motion_env_311\\Scripts\\python.exe",
+    "python.analysis.extraPaths": [
+        "D:\\motion_recognition\\motion_env_311\\Lib\\site-packages",
+        "D:\\motion_recognition\\utils"
+    ],
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportMissingImports": "none",
+        "reportMissingModuleSource": "none"
+    },
+    "python.languageServer": "Pylance",
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": false,
+    "python.testing.unittestEnabled": false,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000
+}

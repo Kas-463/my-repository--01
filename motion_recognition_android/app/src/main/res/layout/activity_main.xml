@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="32dp">
+
+        <!-- 传感器数据显示 -->
+        <TextView
+            android:id="@+id/accelerometer_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="加速度计: 等待数据..."
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/gyroscope_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="陀螺仪: 等待数据..."
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- 预测结果显示 - 修复对比度问题 -->
+        <TextView
+            android:id="@+id/prediction_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="当前状态: 等待模型加载..."
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="#E0E0E0"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- 状态信息 -->
+        <TextView
+            android:id="@+id/status_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请选择运动状态开始记录"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <!-- 运动状态选择按钮 - 第一行 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btn_static"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="静止\n(未开始)"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:padding="8dp"/>
+
+            <Button
+                android:id="@+id/btn_walking"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="步行\n(未开始)"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:padding="8dp"
+                android:layout_marginStart="16dp"/>
+
+        </LinearLayout>
+
+        <!-- 运动状态选择按钮 - 第二行 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btn_upstairs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="上楼梯\n(未开始)"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:padding="8dp"/>
+
+            <Button
+                android:id="@+id/btn_downstairs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="下楼梯\n(未开始)"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:padding="8dp"
+                android:layout_marginStart="16dp"/>
+
+        </LinearLayout>
+
+        <!-- 运动状态选择按钮 - 第三行 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btn_uphill"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="爬坡\n(未开始)"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:padding="8dp"/>
+
+            <Button
+                android:id="@+id/btn_running"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="跑步\n(未开始)"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:padding="8dp"
+                android:layout_marginStart="16dp"/>
+
+        </LinearLayout>
+
+        <!-- 检测结果标题 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="运动状态检测结果"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:padding="8dp"/>
+
+        <!-- 检测结果展示 -->
+        <TextView
+            android:id="@+id/result_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="识别结果将显示在这里"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="#333333"/>
+
+    </LinearLayout>
+</ScrollView>

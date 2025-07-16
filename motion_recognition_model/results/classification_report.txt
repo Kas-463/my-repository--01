@@ -1,0 +1,12 @@
+              precision    recall  f1-score   support
+
+  DownStairs       1.00      0.99      0.99       288
+     Running       1.00      1.00      1.00       272
+      Static       1.00      1.00      1.00       386
+     Uphills       0.98      0.97      0.97       484
+    Upstairs       0.97      0.98      0.97       294
+     Walking       0.96      0.96      0.96       371
+
+    accuracy                           0.98      2095
+   macro avg       0.98      0.98      0.98      2095
+weighted avg       0.98      0.98      0.98      2095

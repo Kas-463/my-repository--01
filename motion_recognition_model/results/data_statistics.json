@@ -1,0 +1,21 @@
+{
+  "total_files": 342,
+  "total_points": 451197,
+  "class_distribution": {
+    "DownStairs": 69035,
+    "Running": 62597,
+    "Static": 85821,
+    "Uphills": 84661,
+    "Upstairs": 69001,
+    "Walking": 80082
+  },
+  "load_time_sec": 1.4149987697601318,
+  "quality_metrics": {
+    "files_processed": 342,
+    "files_skipped": 0,
+    "columns_mismatch": 0,
+    "missing_values": 0,
+    "too_short": 0,
+    "other_errors": 0
+  }
+}

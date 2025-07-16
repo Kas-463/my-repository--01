@@ -1,0 +1,18 @@
+{
+  "train": {
+    "DownStairs": 684,
+    "Running": 633,
+    "Static": 962,
+    "Uphills": 923,
+    "Upstairs": 697,
+    "Walking": 849
+  },
+  "test": {
+    "DownStairs": 171,
+    "Running": 158,
+    "Static": 241,
+    "Uphills": 231,
+    "Upstairs": 175,
+    "Walking": 212
+  }
+}
